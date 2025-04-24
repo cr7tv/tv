@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://www.yosintv.link/favicon.ico' rel='icon' type='image/x-icon'/>
+<title> Cricket | Football Live </title>
+<style>
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    font-family: Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+#player {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#text {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+    
+</style>
+    
+</head>
+<body>
+<iframe id="player" loading="lazy" allowfullscreen></iframe>
+  
+<!--
+https://yosintv2.github.io/tv/soon.html
+-->
+    
+<script>
+const channels = {
+
+tsports: " https://cr7tv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/DGI/H2102/chunks.m3u8?p=49&cf=1744984809&d=&ip=60.109.86.40&e=1794985409&h=1bd779f6c79b0f4909848dd023aff83d",    // IPLPPV
+khd: " https://cr7tv.github.io/player/dmca.html?url=___________ ",    // IPLPPV
+star: " https://cr7tv.github.io/player/dmca.html?url=___________ ",    // IPLPPV
+t20cfd: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://reduserx.ifrem.net/iframe/frame.php ",    // IPLPPV
+skycricc: " https://yosintv2.github.io/bkp/plyrr.html?url=https://iplislive.pages.dev/copy-karne-wala-gay-bsdk-2-baap-ka.m3u8 ",    // IPLPPV
+skycric: " https://yosintv2.github.io/bkp/plyrr.html?url=https://wikihznew.newkso.ru/wikihz/wikicric1/mono.m3u8",    // IPLPPV
+
+    
+    
+//Nepal LIVE
+  
+psl: "https://live.mrgamingstream.net/Player/m3u?url=https://stream2.aryzap.com/v1/018a8885b8951eb401a603639363/018a88860ada09831f17035d95dd/main.m3u8 ",     // NEPAL
+psl1: " https://live.mrgamingstream.net/Player/jwads.html?src=https://live.mrgamingstream.net/Player/m3u?url=https://stream2.aryzap.com/v1/018a8885b8951eb401a603639363/018a88860ada09831f17035d95dd/main.m3u8",     // NEPAL
+
+
+
+    
+};
+
+
+
+    
+const urlParams = new URLSearchParams(window.location.search);
+const channel = urlParams.get('id');
+function setChannel(channel) {
+const iframe = document.getElementById('player');
+iframe.src = channels[channel] || channels.tnt1;
+}
+setChannel(channel);
+</script>
+
+
+
+
+
+    
+</body>
+</html>
